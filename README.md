@@ -104,7 +104,7 @@ The api is deployed in render.com
 - **Request Body**:
   ```json
   {
-      "title": "Vanilla Cake",
+      "name": "Vanilla Cake",
       "ingredients": ["Flour", "Vanilla Extract", "Sugar", "Eggs", "Butter"],
       "instructions": "Preheat oven to 350°F. Mix ingredients. Bake for 25 minutes."
   }
@@ -115,7 +115,7 @@ The api is deployed in render.com
       "message": "Recipe created successfully",
       "recipe": {
           "_id": "64f21e857e583b002c6fca1e",
-          "title": "Vanilla Cake",
+          "name": "Vanilla Cake",
           "ingredients": ["Flour", "Vanilla Extract", "Sugar", "Eggs", "Butter"],
           "instructions": "Preheat oven to 350°F. Mix ingredients. Bake for 25 minutes."
       }
