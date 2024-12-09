@@ -4,7 +4,7 @@ A full-featured CRUD application for managing recipes, built with Node.js, Expre
 
 ---
 ### **Link to Postman Documentation**
-[Recipes API Documentation](https://elements.getpostman.com/redirect?entityId=40143357-bb9b3a84-9f0b-462a-9d68-7ec8bbf6a634&entityType=collection)
+[Recipes API Documentation](https://www.postman.com/vaibhavapriya/workspace/submission/collection/40143357-bb9b3a84-9f0b-462a-9d68-7ec8bbf6a634?action=share&creator=40143357)
 
 
 ### **Link to Deployment**
