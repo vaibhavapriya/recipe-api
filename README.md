@@ -3,6 +3,14 @@
 A full-featured CRUD application for managing recipes, built with Node.js, Express.js, and Mongoose. This app follows the MVC architecture and includes API documentation via Postman.
 
 ---
+### **Link to Postman Documentation**
+[Recipes API Documentation](https://elements.getpostman.com/redirect?entityId=40143357-bb9b3a84-9f0b-462a-9d68-7ec8bbf6a634&entityType=collection)
+
+
+### **Link to Deployment**
+[Recipes API ](https://recipe-api-61jq.onrender.com/api/recipes)
+
+---
 
 ## **Features**
 - **Create a Recipe**: Add a new recipe with ingredients and instructions.
@@ -85,17 +93,8 @@ The server will run at `http://localhost:5000`.
 2. Explore each endpoint in the collection.
 3. Follow the examples to test the API.
 
-### **Link to Postman Documentation**
-[Recipes API Documentation](https://elements.getpostman.com/redirect?entityId=40143357-bb9b3a84-9f0b-462a-9d68-7ec8bbf6a634&entityType=collection)
-
---
 ## **Deployment**
 The api is deployed in render.com
-
-### **Link to Deployment**
-[Recipes API ](https://recipe-api-61jq.onrender.com/api/recipes)
-
----
 
 ## **Sample Request and Response**
 
