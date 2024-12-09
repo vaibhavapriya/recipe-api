@@ -1,0 +1,756 @@
+{
+	"info": {
+		"_postman_id": "bb9b3a84-9f0b-462a-9d68-7ec8bbf6a634",
+		"name": "recipe-api",
+		"description": "| Method | Endpoint | Description |\n| --- | --- | --- |\n\n| POST | /api/recipes | Create a new recipe |\n\n| GET | /api/recipes | Retrieve all recipes |\n\n| GET | /api/recipes/:id | Retrieve a recipe by ID |\n\n| PUT | /api/recipes/:id | Update a recipe by ID |\n\n| DELETE | /api/recipes/:id | Delete a recipe by ID |",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40143357"
+	},
+	"item": [
+		{
+			"name": "Retrieve all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recipe-api-61jq.onrender.com/api/recipes",
+					"protocol": "https",
+					"host": [
+						"recipe-api-61jq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "recipes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 04:56:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1280"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef268db7bed7f49-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e64-xRquVFqkHU7x8w03MiUnYMaBMYA\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "63bba40e-f113-4b9c"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"675487c7620f78002494d8cb\",\n        \"name\": \"Chocolate Cake\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Cocoa Powder\",\n            \"Sugar\",\n            \"Eggs\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Preheat oven to 350°F (175°C),Mix dry ingredients together,Add wet ingredients and mix until smooth,Bake for 30 minutes.\",\n        \"createdAt\": \"2024-12-07T17:37:11.024Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755be4de78940d72a22c93a\",\n        \"name\": \"Vanilla Cake\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Vanilla Extract\",\n            \"Sugar\",\n            \"Eggs\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Preheat oven to 350°F (175°C), Mix dry ingredients together, Add wet ingredients and mix until smooth, Bake for 25 minutes.\",\n        \"createdAt\": \"2024-12-08T15:42:05.053Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bee8e78940d72a22c93e\",\n        \"name\": \"Chocolate Chip Cookies\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Butter\",\n            \"Sugar\",\n            \"Brown Sugar\",\n            \"Eggs\",\n            \"Chocolate Chips\",\n            \"Vanilla Extract\",\n            \"Baking Soda\"\n        ],\n        \"instructions\": \"Preheat oven to 375°F (190°C), Mix dry and wet ingredients separately, Combine all ingredients, Scoop dough onto baking sheet, Bake for 10-12 minutes.\",\n        \"createdAt\": \"2024-12-08T15:44:40.595Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf1ee78940d72a22c940\",\n        \"name\": \"Pancakes\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Milk\",\n            \"Eggs\",\n            \"Sugar\",\n            \"Baking Powder\",\n            \"Salt\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Whisk dry ingredients, Mix in wet ingredients until smooth, Pour batter onto a hot griddle, Flip when bubbles form, Cook until golden brown.\",\n        \"createdAt\": \"2024-12-08T15:45:34.167Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf64e78940d72a22c942\",\n        \"name\": \"Spaghetti Bolognese\",\n        \"ingredients\": [\n            \"Spaghetti\",\n            \"Ground Beef\",\n            \"Onion\",\n            \"Garlic\",\n            \"Tomato Sauce\",\n            \"Olive Oil\",\n            \"Salt\",\n            \"Pepper\"\n        ],\n        \"instructions\": \"Cook spaghetti according to package instructions, Sauté onion and garlic in olive oil, Add ground beef and cook until browned, Stir in tomato sauce and seasonings, Simmer for 20 minutes, Serve over spaghetti.\",\n        \"createdAt\": \"2024-12-08T15:46:44.689Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf93e78940d72a22c944\",\n        \"name\": \"Caesar Salad\",\n        \"ingredients\": [\n            \"Romaine Lettuce\",\n            \"Croutons\",\n            \"Parmesan Cheese\",\n            \"Caesar Dressing\"\n        ],\n        \"instructions\": \"Chop lettuce, Toss with croutons, cheese, and Caesar dressing, Serve chilled.\",\n        \"createdAt\": \"2024-12-08T15:47:31.939Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bfc1e78940d72a22c946\",\n        \"name\": \"Chicken Curry\",\n        \"ingredients\": [\n            \"Chicken\",\n            \"Onion\",\n            \"Garlic\",\n            \"Ginger\",\n            \"Tomatoes\",\n            \"Curry Powder\",\n            \"Coconut Milk\",\n            \"Salt\",\n            \"Pepper\"\n        ],\n        \"instructions\": \"Sauté onion, garlic, and ginger in oil, Add chicken and cook until browned, Stir in tomatoes and curry powder, Add coconut milk and simmer until chicken is tender.\",\n        \"createdAt\": \"2024-12-08T15:48:17.499Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755c016e78940d72a22c949\",\n        \"name\": \"Grilled Cheese Sandwich\",\n        \"ingredients\": [\n            \"Bread\",\n            \"Cheddar Cheese\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Butter one side of each bread slice, Place cheese between slices, Grill in a pan over medium heat until golden brown and cheese is melted.\",\n        \"createdAt\": \"2024-12-08T15:49:42.094Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755c041e78940d72a22c94b\",\n        \"name\": \"Tomato Soup\",\n        \"ingredients\": [\n            \"Tomatoes\",\n            \"Onion\",\n            \"Garlic\",\n            \"Vegetable Broth\",\n            \"Salt\",\n            \"Pepper\",\n            \"Cream\"\n        ],\n        \"instructions\": \"Sauté onion and garlic, Add tomatoes and broth, Simmer until softened, Blend until smooth, Add cream and season to taste.\",\n        \"createdAt\": \"2024-12-08T15:50:25.853Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6756767b2157bfd392dc09e1\",\n        \"name\": \"Beef Tacos\",\n        \"ingredients\": [\n            \"Ground Beef\",\n            \"Taco Shells\",\n            \"Lettuce\",\n            \"Tomato\",\n            \"Cheddar Cheese\",\n            \"Taco Seasoning\"\n        ],\n        \"instructions\": \"Cook beef with taco seasoning, Fill taco shells with beef, lettuce, tomato, and cheese, Serve warm.\",\n        \"createdAt\": \"2024-12-09T04:47:55.417Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675678222157bfd392dc09e4\",\n        \"name\": \"Banana Smoothie\",\n        \"ingredients\": [\n            \"Bananas\",\n            \"Milk\",\n            \"Yogurt\",\n            \"Honey\"\n        ],\n        \"instructions\": \"Combine all ingredients in a blender, Blend until smooth, Serve chilled.\",\n        \"createdAt\": \"2024-12-09T04:54:58.664Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "after delete beeftaco",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 05:03:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1187"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef272a72bfa17b7-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d28-6dWAa5WrltrK+VFBZ7x7O9wFK7w\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "2ce3a259-55c7-46f4"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"675487c7620f78002494d8cb\",\n        \"name\": \"Chocolate Cake\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Cocoa Powder\",\n            \"Sugar\",\n            \"Eggs\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Preheat oven to 350°F (175°C),Mix dry ingredients together,Add wet ingredients and mix until smooth,Bake for 30 minutes.\",\n        \"createdAt\": \"2024-12-07T17:37:11.024Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755be4de78940d72a22c93a\",\n        \"name\": \"Vanilla Cake\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Vanilla Extract\",\n            \"Sugar\",\n            \"Eggs\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Preheat oven to 350°F (175°C), Mix dry ingredients together, Add wet ingredients and mix until smooth, Bake for 25 minutes.\",\n        \"createdAt\": \"2024-12-08T15:42:05.053Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bee8e78940d72a22c93e\",\n        \"name\": \"Chocolate Chip Cookies\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Butter\",\n            \"Sugar\",\n            \"Brown Sugar\",\n            \"Eggs\",\n            \"Chocolate Chips\",\n            \"Vanilla Extract\",\n            \"Baking Soda\"\n        ],\n        \"instructions\": \"Preheat oven to 375°F (190°C), Mix dry and wet ingredients separately, Combine all ingredients, Scoop dough onto baking sheet, Bake for 10-12 minutes.\",\n        \"createdAt\": \"2024-12-08T15:44:40.595Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf1ee78940d72a22c940\",\n        \"name\": \"Pancakes\",\n        \"ingredients\": [\n            \"Flour\",\n            \"Milk\",\n            \"Eggs\",\n            \"Sugar\",\n            \"Baking Powder\",\n            \"Salt\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Whisk dry ingredients, Mix in wet ingredients until smooth, Pour batter onto a hot griddle, Flip when bubbles form, Cook until golden brown.\",\n        \"createdAt\": \"2024-12-08T15:45:34.167Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf64e78940d72a22c942\",\n        \"name\": \"Spaghetti Bolognese\",\n        \"ingredients\": [\n            \"Spaghetti\",\n            \"Ground Beef\",\n            \"Onion\",\n            \"Garlic\",\n            \"Tomato Sauce\",\n            \"Olive Oil\",\n            \"Salt\",\n            \"Pepper\"\n        ],\n        \"instructions\": \"Cook spaghetti according to package instructions, Sauté onion and garlic in olive oil, Add ground beef and cook until browned, Stir in tomato sauce and seasonings, Simmer for 20 minutes, Serve over spaghetti.\",\n        \"createdAt\": \"2024-12-08T15:46:44.689Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bf93e78940d72a22c944\",\n        \"name\": \"Caesar Salad\",\n        \"ingredients\": [\n            \"Romaine Lettuce\",\n            \"Croutons\",\n            \"Parmesan Cheese\",\n            \"Caesar Dressing\"\n        ],\n        \"instructions\": \"Chop lettuce, Toss with croutons, cheese, and Caesar dressing, Serve chilled.\",\n        \"createdAt\": \"2024-12-08T15:47:31.939Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755bfc1e78940d72a22c946\",\n        \"name\": \"Chicken Curry\",\n        \"ingredients\": [\n            \"Chicken\",\n            \"Onion\",\n            \"Garlic\",\n            \"Ginger\",\n            \"Tomatoes\",\n            \"Curry Powder\",\n            \"Coconut Milk\",\n            \"Salt\",\n            \"Pepper\"\n        ],\n        \"instructions\": \"Sauté onion, garlic, and ginger in oil, Add chicken and cook until browned, Stir in tomatoes and curry powder, Add coconut milk and simmer until chicken is tender.\",\n        \"createdAt\": \"2024-12-08T15:48:17.499Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755c016e78940d72a22c949\",\n        \"name\": \"Grilled Cheese Sandwich\",\n        \"ingredients\": [\n            \"Bread\",\n            \"Cheddar Cheese\",\n            \"Butter\"\n        ],\n        \"instructions\": \"Butter one side of each bread slice, Place cheese between slices, Grill in a pan over medium heat until golden brown and cheese is melted.\",\n        \"createdAt\": \"2024-12-08T15:49:42.094Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6755c041e78940d72a22c94b\",\n        \"name\": \"Tomato Soup\",\n        \"ingredients\": [\n            \"Tomatoes\",\n            \"Onion\",\n            \"Garlic\",\n            \"Vegetable Broth\",\n            \"Salt\",\n            \"Pepper\",\n            \"Cream\"\n        ],\n        \"instructions\": \"Sauté onion and garlic, Add tomatoes and broth, Simmer until softened, Blend until smooth, Add cream and season to taste.\",\n        \"createdAt\": \"2024-12-08T15:50:25.853Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"675678222157bfd392dc09e4\",\n        \"name\": \"Banana Smoothie\",\n        \"ingredients\": [\n            \"Bananas\",\n            \"Milk\",\n            \"Yogurt\",\n            \"Honey\"\n        ],\n        \"instructions\": \"Combine all ingredients in a blender, Blend until smooth, Serve chilled.\",\n        \"createdAt\": \"2024-12-09T04:54:58.664Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Retrieve",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recipe-api-61jq.onrender.com/api/recipes/675487c7620f78002494d8cb",
+					"protocol": "https",
+					"host": [
+						"recipe-api-61jq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"675487c7620f78002494d8cb"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "choclate cake",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes/675487c7620f78002494d8cb",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes",
+								"675487c7620f78002494d8cb"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 04:41:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef2522bfc33178f-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-u1EPoOA02q6WTO8lLyAaZcJzWuY\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "6ce59f39-db1d-446c"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"675487c7620f78002494d8cb\",\n    \"name\": \"Chocolate Cake\",\n    \"ingredients\": [\n        \"Flour\",\n        \"Cocoa Powder\",\n        \"Sugar\",\n        \"Eggs\",\n        \"Butter\"\n    ],\n    \"instructions\": \"Preheat oven to 350°F (175°C),Mix dry ingredients together,Add wet ingredients and mix until smooth,Bake for 30 minutes.\",\n    \"createdAt\": \"2024-12-07T17:37:11.024Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Vegetable Stir-Fry\",\r\n        \"ingredients\": [\"Broccoli\", \"Carrots\", \"Bell Peppers\", \"Onion\", \"Garlic\", \"Soy Sauce\", \"Sesame Oil\"],\r\n        \"instructions\": \"Heat oil in a wok, Stir-fry garlic and onion, Add vegetables and cook until tender-crisp, Toss with soy sauce before serving.\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://recipe-api-61jq.onrender.com/api/recipes/6755c041e78940d72a22c94b",
+					"protocol": "https",
+					"host": [
+						"recipe-api-61jq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"6755c041e78940d72a22c94b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "vegetable stir fry to tomato Soup",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"name\": \"Tomato Soup\",\r\n        \"ingredients\": [\"Tomatoes\", \"Onion\", \"Garlic\", \"Vegetable Broth\", \"Salt\", \"Pepper\", \"Cream\"],\r\n        \"instructions\": \"Sauté onion and garlic, Add tomatoes and broth, Simmer until softened, Blend until smooth, Add cream and season to taste.\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes/6755c041e78940d72a22c94b",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes",
+								"6755c041e78940d72a22c94b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 04:51:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "243"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef261d59bc2800a-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"148-uXHRtXag62PIUlbeJMW/Jsfm2AE\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "f68ee456-4cb2-402b"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6755c041e78940d72a22c94b\",\n    \"name\": \"Tomato Soup\",\n    \"ingredients\": [\n        \"Tomatoes\",\n        \"Onion\",\n        \"Garlic\",\n        \"Vegetable Broth\",\n        \"Salt\",\n        \"Pepper\",\n        \"Cream\"\n    ],\n    \"instructions\": \"Sauté onion and garlic, Add tomatoes and broth, Simmer until softened, Blend until smooth, Add cream and season to taste.\",\n    \"createdAt\": \"2024-12-08T15:50:25.853Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "soup to stir fry",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Vegetable Stir-Fry\",\r\n        \"ingredients\": [\"Broccoli\", \"Carrots\", \"Bell Peppers\", \"Onion\", \"Garlic\", \"Soy Sauce\", \"Sesame Oil\"],\r\n        \"instructions\": \"Heat oil in a wok, Stir-fry garlic and onion, Add vegetables and cook until tender-crisp, Toss with soy sauce before serving.\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes/6755c041e78940d72a22c94b",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes",
+								"6755c041e78940d72a22c94b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 05:07:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "262"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef278643a647fb3-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15a-f02Nj00Ra7C2x8LvRYITtmGW1B0\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "b969b2fa-e9ca-4b77"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6755c041e78940d72a22c94b\",\n    \"name\": \"Vegetable Stir-Fry\",\n    \"ingredients\": [\n        \"Broccoli\",\n        \"Carrots\",\n        \"Bell Peppers\",\n        \"Onion\",\n        \"Garlic\",\n        \"Soy Sauce\",\n        \"Sesame Oil\"\n    ],\n    \"instructions\": \"Heat oil in a wok, Stir-fry garlic and onion, Add vegetables and cook until tender-crisp, Toss with soy sauce before serving.\",\n    \"createdAt\": \"2024-12-08T15:50:25.853Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"name\": \"Beef Tacos\",\r\n        \"ingredients\": [\"Ground Beef\", \"Taco Shells\", \"Lettuce\", \"Tomato\", \"Cheddar Cheese\", \"Taco Seasoning\"],\r\n        \"instructions\": \"Cook beef with taco seasoning, Fill taco shells with beef, lettuce, tomato, and cheese, Serve warm.\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://recipe-api-61jq.onrender.com/api/recipes/",
+					"protocol": "https",
+					"host": [
+						"recipe-api-61jq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "beef tacos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"name\": \"Beef Tacos\",\r\n        \"ingredients\": [\"Ground Beef\", \"Taco Shells\", \"Lettuce\", \"Tomato\", \"Cheddar Cheese\", \"Taco Seasoning\"],\r\n        \"instructions\": \"Cook beef with taco seasoning, Fill taco shells with beef, lettuce, tomato, and cheese, Serve warm.\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes/",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 04:47:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "227"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef25c225aa0178e-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13b-cpTaDl/6JC2mMDQuw9DmzSg2s+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "54d48116-1c6e-48c5"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Beef Tacos\",\n    \"ingredients\": [\n        \"Ground Beef\",\n        \"Taco Shells\",\n        \"Lettuce\",\n        \"Tomato\",\n        \"Cheddar Cheese\",\n        \"Taco Seasoning\"\n    ],\n    \"instructions\": \"Cook beef with taco seasoning, Fill taco shells with beef, lettuce, tomato, and cheese, Serve warm.\",\n    \"_id\": \"6756767b2157bfd392dc09e1\",\n    \"createdAt\": \"2024-12-09T04:47:55.417Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://recipe-api-61jq.onrender.com/api/recipes/6756767b2157bfd392dc09e1",
+					"protocol": "https",
+					"host": [
+						"recipe-api-61jq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"6756767b2157bfd392dc09e1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "beef taco",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://recipe-api-61jq.onrender.com/api/recipes/6756767b2157bfd392dc09e1",
+							"protocol": "https",
+							"host": [
+								"recipe-api-61jq",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"recipes",
+								"6756767b2157bfd392dc09e1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 09 Dec 2024 05:02:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8ef2711fae207ef2-MAA"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29-KFG1c0e0/gh7dJWyle1YbvaYNGw\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "5f92e7e1-a9aa-4545"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Recipe deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
